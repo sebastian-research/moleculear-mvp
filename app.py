@@ -8,7 +8,7 @@ st.set_page_config(page_title="Moleculear MVP", layout="wide")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("moleculear_proprietary_failures_v0.csv")
+    return pd.read_csv("molecule-ar_proprietary_failures_v0.csv")
 
 df = load_data()
 
@@ -25,7 +25,7 @@ def build_model(dataframe):
 
 scaler, nn, Xs = build_model(df)
 
-st.title("Moleculear — Failure Intelligence MVP")
+st.title("Molecule-ar — Failure Intelligence MVP")
 st.caption("Enter a candidate profile → retrieve similar historical failures → predict likely failure mode → suggest next best experiment.")
 
 left, right = st.columns([0.42, 0.58], gap="large")

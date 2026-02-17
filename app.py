@@ -8,7 +8,7 @@ st.set_page_config(page_title="Moleculear MVP", layout="wide")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("molecule-ar_proprietary_failures_v0.csv")
+    return pd.read_csv("moleculear_proprietary_failures_v0.csv")
 
 df = load_data()
 
